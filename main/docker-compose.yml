@@ -1,0 +1,10 @@
+#To manage multiple containers and how they interact either using api or databases kind of stuff
+version: '3'
+
+services:
+  hospital_neo4j_etl:
+    build:
+      context: ./hospital_neo4j_etl
+    env_file:
+      - .env
+
